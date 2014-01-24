@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<global>
+		<models>
+			<eschrade_autoloader>
+				<class>Eschrade_Autoloader_Model</class>
+			</eschrade_autoloader>
+		</models>
+		<events>
+			<controller_front_init_before>
+				<observers>
+					<eschrade_autoloader>
+						<class>eschrade_autoloader/autoloader</class>
+						<method>addAutoloader</method>
+					</eschrade_autoloader>
+				</observers>
+			</controller_front_init_before>
+		</events>
+	</global>
+</config>
