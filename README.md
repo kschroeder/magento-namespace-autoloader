@@ -1,0 +1,1 @@
+This is a simple module that allows you to use PHP 5.3 namespaced code in Magento 1.  The most typical use for this will be if you are using a namespaced library in /lib in a Magento module.  This module injects itself at controller_front_init_before and will be called before the native autoloader, but will only autoload namespaced classes thus leaving normal autoloading alone.
