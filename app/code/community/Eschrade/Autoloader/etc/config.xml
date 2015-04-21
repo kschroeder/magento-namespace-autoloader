@@ -15,6 +15,14 @@
 					</eschrade_autoloader>
 				</observers>
 			</controller_front_init_before>
+			<default>
+				<observers>
+					<eschrade_autoloader_cron>
+						<class>eschrade_autoloader/autoloader</class>
+						<method>addAutoloader</method>
+					</eschrade_autoloader_cron>
+				</observers>
+			</default>
 		</events>
 	</global>
 </config>
